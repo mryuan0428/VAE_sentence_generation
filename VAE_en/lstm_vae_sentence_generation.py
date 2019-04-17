@@ -24,7 +24,7 @@ import os
 首先，设置主目录和一些有关文本特征的变量。
 将最大序列长度设置为25，将词汇表中的最大单词数设置为12000，使用300维embeddings。
 最后，从csv加载文本。文本文件是Quora Kaggle挑战的训练文件，包含大约808000个句子。
-''' 
+'''
 BASE_DIR = './data/'
 TRAIN_DATA_FILE = BASE_DIR + 'train.csv'#80+万条问句
 GLOVE_EMBEDDING = BASE_DIR + 'glove.6B.300d.txt'#单词->300维embedding
