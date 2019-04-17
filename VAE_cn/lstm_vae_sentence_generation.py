@@ -57,7 +57,7 @@ print('Found %s unique tokens' % len(tokenizer.word_index))
 
 # **关键步骤** 若不能正常工作，丢弃OOV_Token
 tokenizer.word_index = {e:i for e,i in tokenizer.word_index.items() if i <= MAX_NB_WORDS} # <= 从1开始
-tokenizer.word_index[tokenizer.oov_token] = MAX_NB_WORDS + 1
+#tokenizer.word_index[tokenizer.oov_token] = MAX_NB_WORDS + 1
 word_index = tokenizer.word_index #word到index的字典
 index2word = {v: k for k, v in word_index.items()} #index到word的字典
 
